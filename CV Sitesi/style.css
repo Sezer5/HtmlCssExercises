@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navSection{
+    background-color: lightgray;
+    min-height: 90vh;
+    color: whitesmoke;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+
+.links a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.contact{
+    background-color: whitesmoke;
+    padding: 16px 24px;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.contact:hover{
+    opacity: 0.7;
+}
+
+.personalDiv{
+    padding: 0px 20%;
+}
+
+.title{
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding: 30px 0px;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe p{
+    width: 50%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    list-style: none;
+}
+
+.blogSection{
+    padding: 64px 20%;
+}
+.blogTitle{
+    font-size: 36px;
+    margin: 20px 0px;
+    font-weight: 100;
+}
+
+.mainTitle{
+    font-size: 72px;
+}
+
+.blogText{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.eventsSection{
+    background-color: lightgrey;
+    padding: 64px 20%; 
+}
+
+.event{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.eventTitle{
+    font-size: 24px;
+}
+
+.eventLocation{
+    font-size: 20px;
+}
+
+.event:hover{
+    background-color: ghostwhite;
+    transform: translateY(-10px);
+}
+
+footer{
+    background-color: black;
+    padding: 64px;
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
