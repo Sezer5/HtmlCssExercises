@@ -1,0 +1,88 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+}
+
+h1{
+    display: flex;
+    font-weight: 300;
+}
+header{
+    margin: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+
+.links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+a.active{
+    border-bottom:2px solid black;
+}
+.card{
+    width: 49%;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.card img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.card img:hover{
+    opacity: 0.9;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: translateY(-20px);
+}
+
+.gallery{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card h2{
+    margin: 8px 0px 16px 0px;
+    font-weight: 300;
+}
+
+.why{
+    width: 50%;
+    margin: 100px 200px;
+    
+}
+
+.banner{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.message{
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 300;
+    margin-top:0px ;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.contact p{
+    font-size: 20px;
+    margin: 0;
+}

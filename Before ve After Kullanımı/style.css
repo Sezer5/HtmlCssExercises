@@ -1,0 +1,25 @@
+div::before{
+    content: "Before!";
+}
+
+div::after{
+    content: "After!";
+}
+
+blockquote{
+    font-size: 50px;
+    position: relative;
+}
+
+blockquote::before{
+    content: open-quote;
+    position: absolute;
+    left: -30px;
+    top: 20px;
+}
+
+blockquote::after{
+    content: close-quote;
+    position: absolute;
+    top: 160px;
+}
