@@ -1,0 +1,52 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    padding: 0px 40px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+}
+
+/* Biraz büyük bilgisayarlar için netbook falan gibi olanlar 1024 px kullanılır */
+
+@media screen and (max-width: 1024px){
+    
+}
+
+
+
+
+/* Tablet için 768 px kullanılır */
+
+@media screen and (max-width: 768px){
+    .navbar a{
+        margin: 0px 15px;
+        font-size: 15px;
+    }
+
+
+
+}
+
+
+/* Mobil için 480 px kullanılır */
+
+@media screen and (max-width: 480px){ 
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-links{
+        flex-direction: column;
+    }
+}

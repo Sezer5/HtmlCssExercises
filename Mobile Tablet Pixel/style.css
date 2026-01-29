@@ -1,0 +1,41 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    font-size: 30px;
+}
+
+
+/**
+    Biraz büyük bilgisayarlar için netbook falan gibi olanlar 1024 px kullanılır 
+*/
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+/**
+    Tablet için 768 px kullanılır 
+*/
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 20px;
+    }
+}
+
+
+/**
+    Mobil için 480 px kullanılır 
+*/
+
+@media screen and (max-width: 480px){ 
+    h1{
+        font-size: 12px;
+    }
+}
