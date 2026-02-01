@@ -13,6 +13,20 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
+.navbar .bar{
+    width: 36px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 3px;
+
+}
+
+.navbar .hamburger{
+    display: none;
+}
+
 .links ul{
     display: flex;
     justify-content: space-between;
@@ -85,4 +99,27 @@ a.active{
 .contact p{
     font-size: 20px;
     margin: 0;
+}
+
+@media screen and (max-width:768px){
+    .navbar .hamburger{
+        display: block;
+    }
+
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar h1{
+        font-size: 20px;
+    }
+
+    .why{
+        width: 80%;
+        margin: 0px;
+        padding: 10px;
+    }
+    .card{
+        width: 100%;
+    }
 }
