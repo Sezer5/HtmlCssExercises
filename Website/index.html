@@ -9,18 +9,23 @@
 </head>
 
 <body>
-    <header>
         <div class="header">
-            <div>
-                <img src="1.jpg" width="64" height="64">
+            <div class="mobilLogo" onclick="displayHeaderMenu()">
+                <img src="icon.jpg" width="50" height="50">
             </div>
-            <div>
-                <a class="headerLinks" href="">Home</a>
-                <a class="headerLinks" href="">About</a>
-                <a class="headerLinks" href="">Contact</a>
+            <div  >
+                <img class="headerLogo" src="1.jpg" width="64" height="64">
+            </div>
+            <div class="mobileLinkHeight">
+                <div class="mobileLinkMain">
+                    <div class="mobileLink">
+                        <a class="headerLinks" href="">Home</a>
+                        <a class="headerLinks" href="">About</a>
+                        <a class="headerLinks" href="">Contact</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
     <div class="banner">
         <div class="bannerContent">
             <h3>Efsane Manşet</h3>
@@ -64,7 +69,32 @@
                 dolor sunt pariatur.</p>
         </div>
     </div>
+    <form>
+        <div class="form-main">
+            <label class="form-element">Ad</label>
+            <input class="form-element" type="text" name="firstname" placeholder="Adınızı Giriniz">
+        </div>
+        <div class="form-main">
+            <label class="form-element">Soyad</label>
+            <input class="form-element" type="text" name="lastname" placeholder="Soyadınızı Giriniz">
+        </div>
+        <div class="form-main">
+            <label class="form-element">Ülke</label>
+            <select class="form-element" name="country" id="">
+                <option value="">Türkiye</option>
+                <option value="">Français</option>
+                <option value="">England</option>
+            </select>
+        </div>
+        <div class="form-main">
+            <button class="form-element">Kaydet</button>
+        </div>
 
+
+    </form>
+    <footer class="footer">
+        <h3>Front-end Tüm Hakları Saklıdır</h3>
+    </footer>
     <script src="script.js"></script>
 </body>
 

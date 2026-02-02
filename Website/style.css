@@ -5,6 +5,9 @@
     background-color: #40b27f;
     height: 80px;
     padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
 .headerLinks{
@@ -54,4 +57,69 @@
 
 .cardContent{
     padding: 20px;
+}
+
+form{
+    width: 100%;
+    margin: 30px 0px;
+}
+
+.form-main{
+    margin: 30px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.form-element{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-element:hover{
+    background-color: ghostwhite;
+}
+
+select option:hover{
+    color: red;
+}
+
+footer{
+    background-color: lightgray;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+}
+.mobilLogo{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .headerLogo{
+        display: none;
+    }
+    .mobilLogo{
+        display: block;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mobileLink{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileLinkMain{
+        display: none;
+    }
 }
