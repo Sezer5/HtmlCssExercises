@@ -30,3 +30,28 @@
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.cardHolder{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 400px;
+    border:1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cardImg{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cartTitle{
+    text-align: center;
+}
+
+.cardContent{
+    padding: 20px;
+}
