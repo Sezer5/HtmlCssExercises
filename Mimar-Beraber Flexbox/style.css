@@ -14,7 +14,7 @@ header{
     align-items: center;
 }
 
-.navbar .bar{
+.bar1,.bar2,.bar3{
     width: 36px;
     height: 4px;
     background-color: black;
@@ -124,23 +124,26 @@ a.active{
     }
 }
 
-.hamburger .bar:nth-child(1){
-    animation:1s fadeBar1 infinite;
+.animationBar1{
+    animation:1s fadeBar1;
+    animation-fill-mode: forwards;
 }
 
-.hamburger .bar:nth-child(2){
-    animation:1s fadeBar2 infinite;
+.animationBar2{
+    animation:1s fadeBar2;
+    animation-fill-mode: forwards;
 }
 
-.hamburger .bar:nth-child(3){
-    animation:1s fadeBar3 infinite;
+.animationBar3{
+    animation:1s fadeBar3;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeBar1{
     from{
         transform: rotate(0);
     }to{
-        transform: rotate(45deg) translate(4px,7px);
+        transform: rotate(45deg) translate(4px,6px);
     }
 }
 
@@ -156,6 +159,6 @@ a.active{
     from{
         transform: rotate(0);
     }to{
-        transform: rotate(-45deg) translate(4px,-7px);
+        transform: rotate(-45deg) translate(4px,-6px);
     }
 }
