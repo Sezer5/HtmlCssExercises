@@ -1,0 +1,92 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 32px;
+}
+
+.container{
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    height: 900px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs p{
+    text-transform: uppercase;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.tabs p:hover{
+    cursor: pointer;
+    color: blue;
+}
+.tabs .active{
+    position: relative;
+}
+
+.tabs .active::before{
+    content: '';
+    background-color: blue;
+    width: 200%;
+    height: 4px;
+    bottom: -5px;
+    left: -50%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.line{
+    position: absolute;
+    height: 3px;
+    background-color: lightseagreen;
+    max-width: 1000px;
+    width: 100%;
+    top:110px;
+}
+
+.customers{
+    margin: 50px auto;
+    background-color:lightskyblue;
+    padding: 10x;
+    border-radius: 30px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+.customerText{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 10;
+    margin-bottom: 0px;
+}
+
+.number{
+    font-size: 100px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.message{
+    margin:20px auto;
+}
