@@ -9,20 +9,15 @@ body{
     overflow-x: hidden;
 }
 
-.hamburgerMenu{
+.navBtn{
     position: fixed;
     top:20px;
     left:20px;
     z-index: 1;
-}
-
-.bar{
-    width: 50px;
-    height: 10px;
-    background-color: #40b27f;
-    margin: 10px 0px;
-    border-radius: 10px;
+    font-size: 50px;
+    color: #40b27f;
     animation: showBars 1s infinite;
+    cursor: pointer;
 }
 
 .header{
@@ -159,6 +154,146 @@ body{
 .product img{
     border-radius: 20px;
 }
+.servicesMainTitleHolder{
+    text-align: center;
+    margin: 40px;
+}
+
+.servicesMainTitleHolder h2,h3{
+    text-align: center;
+    margin: 0px;
+}
+.servicesMainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicesHolder{
+    margin: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px 20px 0px 0px;
+    transition: all 0.4s;
+}
+
+.servicesHolder:hover{
+    transform: scale(1.03);
+}
+
+.servicesHolder img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.servicesInfo{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 20px;
+}
+.addressHolder{
+    display: flex;
+    flex-direction: column;
+}
+
+.addressHeader{
+    color: #40b27f;
+    margin: 10px 0px;
+}
+
+.addressText{
+    font-weight: bolder;
+}
+
+.contact{
+    margin: 60px 0px;
+    background-color: lightgray;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+}
+.formHolder{
+    width: 50%;
+}
+
+.formTitle{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.contactFormElement{
+    margin: 10px 0px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightslategrey;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  
+}
+
+.contactButton{
+    background-color: #40b27f;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 20px 0px;
+    font-weight: bolder;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 30px 0px;
+}
+
+.contactButton:hover{
+    opacity: 0.6;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+}
+
+.connections{
+    display: flex;
+    justify-content: space-between;
+}
+
+.connecitonElement{
+    font-size: 50px;
+    color: white;
+    margin: 0px 20px;
+    transition: all 0.5s ease;
+}
+
+.connecitonElement:hover{
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.word{
+    color: white;
+    font-size: 30px;
+}
 
 @keyframes slideFromRight{
     0%{
@@ -177,5 +312,138 @@ body{
         transform: scale(0.75);
     }100%{
         transform: scale(1);
+    }
+}
+
+/**
+    NAVBAR SCRİPTS HERE
+*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 25vw;
+    background-color: white;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateX(-110%);
+    transition: all 0.5s linear;
+}
+
+.showNavbar{
+    transform: translate(0);
+}
+
+.navbarHeader{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+    color:#40b27f;
+    cursor: pointer;
+}
+
+.navItems{
+    list-style: none;
+    
+}
+
+.navLink{
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.navLink:hover{
+    background-color: lightgreen;
+    color: green;
+    border-right: 6px solid #40b27f;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
+}
+
+
+@media screen and (max-width:768px) {
+    .navBtn{
+        display: none;
+    }
+
+    .navbar{
+        width: 100vw;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .aboutDiv{
+        flex-direction:column ;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutImg{
+        width: 100%;
+    }
+
+    .aboutInfo{
+        width: 100%;
+    }
+
+    .productContainer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .productInfo{
+        width: 100%;
+    }
+
+    .product{
+        width: 100%;
+    }
+
+    .productsDiv{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+
+    .servicesMainContainer{
+        flex-direction: column;
+    }
+
+    .servicesHolder{
+        margin-top: 20px;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formHolder{
+        width: 100%;
+        margin: 30px 10px;
+        
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
     }
 }
