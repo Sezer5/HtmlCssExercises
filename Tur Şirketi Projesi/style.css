@@ -20,6 +20,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 16px 32px;
     background-color: white;
+    z-index: 12;
 }
 
 .navDiv{
@@ -106,4 +107,314 @@ a{
     background: none;
     color: white;
     border: 3px dashed white;
+}
+
+.aboutImg{
+    width: 50%;
+    position: relative;
+}
+
+.aboutImg::before{
+    content: '';
+    position: absolute;
+    border:8px solid cornflowerblue;
+    width: 100%;
+    height: 100%;
+    top:-25px;
+    left:-25px;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.aboutInfo{
+    width: 40%;
+}
+.aboutContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 100px;
+}
+
+.aboutPhoto{
+    width: 100%;
+    
+}
+
+.aboutTitle{
+    text-align: center;
+    margin: 60px 0px;
+    text-transform: uppercase;
+}
+
+.btnDiv{
+    margin-top: 20px;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 20px 10px;
+    overflow-x: hidden;
+}
+
+.servicesMainTitle{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: slideFromRight 4s ease;
+}
+
+.servicesCardHolder{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+
+.servicesCard{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border: 3px dashed lightgray;
+    border-radius: 20px;
+    width: 30%;
+    transition: all 0.3s linear;
+    
+}
+
+.servicesCard:hover{
+    background-color: lightblue;
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.servicesTitle{
+    padding: 10px;
+    font-size: 30px;
+}
+.servicesIcon{
+    width: 10%;
+    font-size: 50px;
+}
+
+.servicesContent{
+    width: 80%;
+    margin-left: 30px;
+}
+
+@keyframes slideFromRight{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+.toursMain{
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.toursMainTitle{
+    text-align: center;
+}
+
+.toursContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0px 10%;
+}
+.tourImageHolder{
+    position: relative;
+}
+
+.tourDate{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: lightskyblue;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 15px 0px 0px 0px;
+    margin-bottom: 4px;
+}
+
+.tourImage{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.tour{
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 40px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour:hover{
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.tourTitle{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.tourDescription{
+    color: gray;
+    line-height: 1.25;
+}
+.tourContent{
+    padding: 20px;
+}
+.tourInformation{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.galleries{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryImgContainer{
+    width: 25%;
+    height: 250px;
+    position: relative;
+    
+}
+
+.galleryImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 32px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    
+}
+
+.galleryImgContainer:hover .galleryIcon{
+    opacity: 1;
+}
+
+.blueEffect{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: blue;
+    transition: all 0.3s linear;
+}
+
+.galleryImgContainer:hover .blueEffect{
+    opacity: 0.3;
+}
+
+.contactSection{
+    background-color: cornflowerblue;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactTitle{
+    width: 40%;
+}
+
+.contactForm{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formControl{
+    width: 80%;
+    height: 40px;
+    border-radius: 15px;
+    padding: 0px 15px;
+    border: none;
+    font-size: 25px;
+}
+
+.formControl:focus{
+    outline:none;
+    font-size: 25px;
+}
+
+.btnSubmit{
+    padding: 5px 25px;
+    background-color: white;
+    color: cornflowerblue;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+}
+.contactTitle{
+    color:white
+}
+
+.contactTitle h3{
+    color:white;
+    font-size: 40px;
+ }
+
+ .contactTitle p{
+    color:white;
+    font-size: 20px;
+ }
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.menuList{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 60%;
+    list-style: none;
+}
+
+.footerSocialMedia{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    color: cornflowerblue;
+    font-size: 50px;
+    width: 60%;
+    list-style: none;
 }
