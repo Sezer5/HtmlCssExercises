@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 ul{
     list-style-type: none;
 }
@@ -335,7 +334,6 @@ a{
 
 .contactSection{
     background-color: cornflowerblue;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,4 +415,81 @@ a{
     font-size: 50px;
     width: 60%;
     list-style: none;
+}
+
+.navToggle{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+   
+    .navDiv{
+     display: block;
+
+    }
+    .navLink:hover{
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .navIcons{
+        display: none;
+    }
+
+    .navToggle{
+    display: inline-block;
+    font-size: 30px;
+    color: cornflowerblue;
+    background: white;
+    border: none;
+    }
+
+    .navHeader{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .aboutContainer{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .aboutInfo{
+        width: 100%;
+    }
+
+    .servicesCardHolder{
+        flex-direction: column;
+    }
+
+    .servicesCard{
+        width: 100%;
+    }
+
+    .contactContainer{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contactForm{
+        width: 100%;
+    }
+    .footer{
+        text-align: center;
+    }
+    .menuList{
+        flex-direction: column;
+    }
+
+    
+}
+
+.showLinks{
+    display: block;
+    height: 250px;
 }
