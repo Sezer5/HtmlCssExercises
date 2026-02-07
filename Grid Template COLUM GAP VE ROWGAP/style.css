@@ -1,0 +1,20 @@
+.container{
+    height: 700px;
+    width: 700px;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: 0 6px 20px rgba(0 0 0 /0.2);
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;  BURADAKİ KOD İLE AŞAĞIDAKİ AYNI*/
+    /* grid-template-columns: fit-content(300px) fit-content(300px) fit-content(300px); */
+    grid-template: 1fr 1fr / repeat(4,1fr);
+    /* column-gap: 20px;
+    row-gap: 20px;  GAP YANİ BOŞLUK VERİRKEN DE KISA YAZIM TARZI İLE YAZABİLİRİZ*/
+    gap: 20px 20px;
+}
+
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

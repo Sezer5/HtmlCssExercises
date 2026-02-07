@@ -1,0 +1,15 @@
+.container{
+    height: 700px;
+    width: 70%;
+    margin: 200px auto;
+    background-color: black;
+    box-shadow: 0 6px 20px rgba(0 0 0 /0.2);
+    display: grid;
+    grid-template-columns: minmax(200px, 600px);
+}
+
+.box{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
