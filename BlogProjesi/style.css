@@ -16,18 +16,18 @@
     background-color: floralwhite;
     padding: 50px 0px;
 }
-.bannerDiv{
+.bannerDiv,.adoutDiv{
     display: flex;
     justify-content: space-around;
 }
 
-.bannerImg{
+.bannerImg,.aboutImg{
     width: 30%;
     border: 4px solid darkmagenta;
     border-radius: 30px;
 }
 
-.bannerPhoto{
+.bannerPhoto,.aboutPhoto{
     width: 100%;
 }
 
@@ -79,4 +79,21 @@
     color: darkmagenta;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.aboutInfo{
+    width: 40%;
+}
+
+.aboutSection{
+    padding: 100px 40px;
+    background-color: lightgrey;
+}
+
+.aboutName{
+    font-size: 50px;
+}
+
+.aboutInfo p{
+    margin-top: 30px;
 }
