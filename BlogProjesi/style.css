@@ -62,7 +62,7 @@
     color: darkmagenta;
 }
 
-.bannerInfo a{
+.btn{
     background-color: darkmagenta;
     border: 4px solid darkmagenta;
     color: white;
@@ -75,7 +75,7 @@
     transition: all 0.3s linear;
 }
 
-.bannerInfo a:hover{
+.btn:hover{
     color: darkmagenta;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -93,7 +93,116 @@
 .aboutName{
     font-size: 50px;
 }
-
+.courseTitle .underLine{
+    margin: 0px auto 20px auto;
+}
 .aboutInfo p{
     margin-top: 30px;
+}
+.courseTitle{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.courseName{
+    font-size: 50px;
+}
+
+.courseCoupon span{
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 400px;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.course img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.courseInfo{
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price{
+    color: darkmagenta;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.sectionFooter{
+    background-color: black;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialMedia{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.footerSlogan{
+    font-size: 20px;
+     margin-bottom: 30px;
+}
+
+@media screen and (max-width:768px){
+    .bannerImg,.aboutImg{
+        display: none;
+    }
+
+    .bannerInfo{
+        text-align: center;
+    }
+
+    .aboutSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .adoutDiv{
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutInfo{
+        width: 100%;
+    }
+
+    .courses{
+        flex-direction: column;
+    }
+
+    .course{
+        width: 100%;
+    }
+    .course img{
+        width: 100%;
+    }
 }
