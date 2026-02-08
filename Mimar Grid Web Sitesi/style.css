@@ -1,0 +1,44 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    max-width: 90%;
+    margin: 0px auto;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.navbar .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.aboutMe{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutMe i{
+    font-size: 30px;
+    color: black;
+}
