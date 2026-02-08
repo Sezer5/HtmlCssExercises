@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navCenter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0px auto;
+}
+.nav{
+    height: 90px;
+    display: grid;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navLogo{
+    width: 50px;
+}
+.navLinks{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    justify-self: end;
+    column-gap: 30px;
+    color: gray;
+}
+
+.navLinks a{
+    color: gray;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: all 0.3s linear;
+}
+
+.navLinks a:hover{
+    color: darkmagenta;
+}
