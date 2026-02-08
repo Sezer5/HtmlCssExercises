@@ -50,7 +50,7 @@ a{
     letter-spacing: 2px;
 }
 
-.bannerDiv .btn{
+.btn{
     color: brown;
     background-color:white;
     padding: 10px 20px;
@@ -64,8 +64,7 @@ a{
     border-radius: 20px;
     transition: all 0.3s linear;
 }
-
-.bannerDiv .btn:hover{
+ .btn:hover{
    background-color: lightgoldenrodyellow;
 }
 
@@ -73,7 +72,7 @@ a{
     font-size: 50px;
 }
 
-.bannerInfo .underline{
+.underline{
     width: 90px;
     height: 4px;
     background-color: darkmagenta;
@@ -105,4 +104,146 @@ a{
     width: 400px;
     border: 4px solid darkmagenta;
     border-radius:20px ;
+}
+.about{
+    background-color: azure;
+}
+.aboutCenter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+
+.servicesTitle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.servicesTitle .underline{
+    margin: 0px auto;
+}
+
+.service .underline{
+    margin: 0px auto;
+}
+
+.servicesSection{
+    background-color: antiquewhite;
+    
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+.serviceIcon{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+.service{
+    padding: 50px 25px;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.service:hover{
+    color: white;
+    background-color: darkmagenta;
+}
+
+.service h4{
+    font-size: 20px;
+}
+.projectsSection{
+    background-color: darkgray;
+    
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    grid-template-areas: 
+    'a b b'
+    'a c d';
+}
+
+.project1{
+    grid-area: a;
+}
+
+.project2{
+    grid-area: b;
+}
+
+.project3{
+    grid-area: c;
+}
+
+.project4{
+    grid-area: d;
+}
+
+.projectsSection .underline{
+    margin: 0px auto;
+} 
+.projectsTitle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.project{
+    height: 100%;
+    position: relative;
+    background-color: darkmagenta;
+    
+}
+
+.project:hover .projectInfo{
+    opacity: 1;
+}
+
+.project:hover .projectImg{
+    opacity: 0.3;
+}
+
+.projectImg{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.projectsText{
+    max-width:500px;
+    margin: 30px auto;
+}
+
+.projectInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.project::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.project:hover::before{
+    opacity: 1;
+    transform:scale(0.8);
+
 }
