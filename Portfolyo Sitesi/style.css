@@ -247,3 +247,54 @@ a{
     transform:scale(0.8);
 
 }
+
+.skills{
+    background: aliceblue;
+}
+
+.skillTitle .underline{
+    margin: 0px auto;
+} 
+
+.skillTitle{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skillsCenter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+}
+
+.skillContainer{
+    position: relative;
+    width: 100%;
+    height: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.skillValue{
+    position: absolute;
+    background-color:darkmagenta;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skillText{
+    position: absolute;
+    top:-32px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+
+.skill{
+    margin-bottom: 30px;
+}
+
+.w75{width: 75%;}
+.w80{width: 80%;}
+.w85{width: 85%;}
+.w90{width: 90%;}
+.w95{width: 95%;}
